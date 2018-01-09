@@ -39,7 +39,6 @@ class Course(models.Model):
         blank=True,
         help_text=_('Last date/time on which verification for this product can be submitted.')
     )
-    history = HistoricalRecords()
     created = models.DateTimeField(null=True, auto_now_add=True)
     modified = models.DateTimeField(null=True, auto_now=True)
     thumbnail_url = models.URLField(null=True, blank=True)
